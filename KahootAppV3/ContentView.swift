@@ -36,18 +36,26 @@ struct ContentView: View {
                         .padding()
                         .frame(width: 170, height: 50)
                         .clipShape(Rectangle())
+                        .background(Color.green)
+                        .foregroundColor(Color.white)
                     Button(questions[currentQuestion].option2) { didTapOption(2) }
                         .padding()
                         .frame(width: 170, height: 50)
                         .clipShape(Rectangle())
+                        .background(Color.red)
+                        .foregroundColor(Color.white)
                 }.padding()
                 VStack {
                     Button(questions[currentQuestion].option3) { didTapOption(3) }.padding()
                         .frame(width: 170, height: 50)
                         .clipShape(Rectangle())
+                        .background(Color.yellow)
+                        .foregroundColor(Color.white)
                     Button(questions[currentQuestion].option4) { didTapOption(4) }.padding()
                         .frame(width: 170, height: 50)
                         .clipShape(Rectangle())
+                        .foregroundColor(Color.white)
+                        .background(Color.blue)
                 }.padding()
             }
         }
